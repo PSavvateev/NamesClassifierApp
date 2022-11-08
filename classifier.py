@@ -75,11 +75,11 @@ class NameClassifier:
             likelihood = female_prob*100
 
         if likelihood <= 60:
-            script = f"{self.name} is closer to be a {gender}, however this name may be used by both genders."
+            script = f"{self.name} is closer to be a {gender}, however this name is quite gender-neutral."
         elif 60 < likelihood <= 75:
-            script = f"{self.name} is likely to be a {gender}. Not commonly, but may imply both genders."
+            script = f"{self.name} is likely to be a {gender}. Also may imply both genders."
         elif 75 < likelihood <= 90:
-            script = f"{self.name} is very likely to be a {gender}. Of course, some exceptions are still possible."
+            script = f"{self.name} is very likely to be a {gender}. Of course, exceptions are possible."
         else:
             script = f"{self.name} should be definitely a {gender}."
 
