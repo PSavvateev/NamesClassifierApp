@@ -5,7 +5,7 @@ from application.classifier import NameClassifier
 import joblib
 
 
-model = joblib.load('application/static/trained_model_rf.joblib')
+model = joblib.load('application/static/trained_model_rf2.joblib')
 
 
 @app.route("/", methods=['GET', 'POST'])
