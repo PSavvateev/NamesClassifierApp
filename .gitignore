@@ -1,1 +1,4 @@
 /venv/
+__pycache__
+/tests/
+/application/static/trained_model_rf.joblib
